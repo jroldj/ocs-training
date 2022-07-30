@@ -6,14 +6,14 @@ metadata:
     machine.openshift.io/cluster-api-cluster: CLUSTERID
     machine.openshift.io/cluster-api-machine-role: workerocs
     machine.openshift.io/cluster-api-machine-type: workerocs
-  name: CLUSTERID-workerocs-us-east-2a
+  name: CLUSTERID-workerocs-ca-central-1a
   namespace: openshift-machine-api
 spec:
   replicas: 1
   selector:
     matchLabels:
       machine.openshift.io/cluster-api-cluster: CLUSTERID
-      machine.openshift.io/cluster-api-machineset: CLUSTERID-workerocs-us-east-2a
+      machine.openshift.io/cluster-api-machineset: CLUSTERID-workerocs-ca-central-1a
   template:
     metadata:
       creationTimestamp: null
@@ -21,7 +21,7 @@ spec:
         machine.openshift.io/cluster-api-cluster: CLUSTERID
         machine.openshift.io/cluster-api-machine-role: workerocs
         machine.openshift.io/cluster-api-machine-type: workerocs
-        machine.openshift.io/cluster-api-machineset: CLUSTERID-workerocs-us-east-2a
+        machine.openshift.io/cluster-api-machineset: CLUSTERID-workerocs-ca-central-1a
     spec:
       metadata:
         creationTimestamp: null
@@ -48,8 +48,8 @@ spec:
           metadata:
             creationTimestamp: null
           placement:
-            availabilityZone: us-east-2a
-            region: us-east-2
+            availabilityZone: ca-central-1a
+            region: ca-central-1
           publicIp: null
           securityGroups:
           - filters:
@@ -60,7 +60,7 @@ spec:
             filters:
             - name: tag:Name
               values:
-              - CLUSTERID-private-us-east-2a
+              - CLUSTERID-private-ca-central-1a
           tags:
           - name: kubernetes.io/cluster/CLUSTERID
             value: owned
@@ -76,14 +76,14 @@ metadata:
     machine.openshift.io/cluster-api-cluster: CLUSTERID
     machine.openshift.io/cluster-api-machine-role: workerocs
     machine.openshift.io/cluster-api-machine-type: workerocs
-  name: CLUSTERID-workerocs-us-east-2b
+  name: CLUSTERID-workerocs-ca-central-1b
   namespace: openshift-machine-api
 spec:
   replicas: 1
   selector:
     matchLabels:
       machine.openshift.io/cluster-api-cluster: CLUSTERID
-      machine.openshift.io/cluster-api-machineset: CLUSTERID-workerocs-us-east-2b
+      machine.openshift.io/cluster-api-machineset: CLUSTERID-workerocs-ca-central-1b
   template:
     metadata:
       creationTimestamp: null
@@ -91,7 +91,7 @@ spec:
         machine.openshift.io/cluster-api-cluster: CLUSTERID
         machine.openshift.io/cluster-api-machine-role: workerocs
         machine.openshift.io/cluster-api-machine-type: workerocs
-        machine.openshift.io/cluster-api-machineset: CLUSTERID-workerocs-us-east-2b
+        machine.openshift.io/cluster-api-machineset: CLUSTERID-workerocs-ca-central-1b
     spec:
       metadata:
         creationTimestamp: null
@@ -118,8 +118,8 @@ spec:
           metadata:
             creationTimestamp: null
           placement:
-            availabilityZone: us-east-2b
-            region: us-east-2
+            availabilityZone: ca-central-1b
+            region: ca-central-1
           publicIp: null
           securityGroups:
           - filters:
@@ -130,7 +130,7 @@ spec:
             filters:
             - name: tag:Name
               values:
-              - CLUSTERID-private-us-east-2b
+              - CLUSTERID-private-ca-central-1b
           tags:
           - name: kubernetes.io/cluster/CLUSTERID
             value: owned
@@ -146,14 +146,14 @@ metadata:
     machine.openshift.io/cluster-api-cluster: CLUSTERID
     machine.openshift.io/cluster-api-machine-role: workerocs
     machine.openshift.io/cluster-api-machine-type: workerocs
-  name: CLUSTERID-workerocs-us-east-2c
+  name: CLUSTERID-workerocs-ca-central-1d
   namespace: openshift-machine-api
 spec:
   replicas: 1
   selector:
     matchLabels:
       machine.openshift.io/cluster-api-cluster: CLUSTERID
-      machine.openshift.io/cluster-api-machineset: CLUSTERID-workerocs-us-east-2c
+      machine.openshift.io/cluster-api-machineset: CLUSTERID-workerocs-ca-central-1d
   template:
     metadata:
       creationTimestamp: null
@@ -161,7 +161,7 @@ spec:
         machine.openshift.io/cluster-api-cluster: CLUSTERID
         machine.openshift.io/cluster-api-machine-role: workerocs
         machine.openshift.io/cluster-api-machine-type: workerocs
-        machine.openshift.io/cluster-api-machineset: CLUSTERID-workerocs-us-east-2c
+        machine.openshift.io/cluster-api-machineset: CLUSTERID-workerocs-ca-central-1d
     spec:
       metadata:
         creationTimestamp: null
@@ -188,8 +188,8 @@ spec:
           metadata:
             creationTimestamp: null
           placement:
-            availabilityZone: us-east-2c
-            region: us-east-2
+            availabilityZone: ca-central-1d
+            region: ca-central-1
           publicIp: null
           securityGroups:
           - filters:
@@ -200,7 +200,7 @@ spec:
             filters:
             - name: tag:Name
               values:
-              - CLUSTERID-private-us-east-2c
+              - CLUSTERID-private-ca-central-1d
           tags:
           - name: kubernetes.io/cluster/CLUSTERID
             value: owned
